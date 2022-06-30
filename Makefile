@@ -1,7 +1,9 @@
-docker-compose = docker-compose -f ./docker/docker-compose.yml --env-file ./docker/.env
+docker-compose = docker-compose
 
 docker-compose-up:
 	$(docker-compose) up -d
+docker-compose-down:
+	$(docker-compose) down
 docker-compose-start:
 	$(docker-compose) start
 docker-compose-stop:
