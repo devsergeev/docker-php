@@ -5,3 +5,4 @@ services:
     volumes:
       - ../solid:/app/solid
       - ../patterns:/app/patterns
+    working_dir: /app
